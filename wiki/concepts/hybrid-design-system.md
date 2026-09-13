@@ -58,7 +58,7 @@ Every project's own DESIGN.md should open with these, adapted from DesignMotionH
 
 **Rule:** don't re-enumerate the tactical pattern library inside the house methodology — cite it, then document which patterns a project drew from.
 
-[DesignMotionHQ's `/patterns` catalogue](https://designmotionhq.com/patterns) (80+ named patterns across Feedback, Forms, Interaction, Motion, Navigation, Visual, and Content) is the tactical menu that Layers 2 and 3 pull concrete choices from. This methodology is a meta-layer above that catalogue, not a competitor to it — it governs *how* a project picks and governs patterns, not *which* date-picker or modal-hierarchy to use.
+[DesignMotionHQ's `/patterns` catalogue](https://designmotionhq.com/patterns) (75 named patterns across Content, Feedback, Forms, Interaction, Motion, Navigation, and Visual — see the index below) is the tactical menu that Layers 2 and 3 pull concrete choices from. This methodology is a meta-layer above that catalogue, not a competitor to it — it governs *how* a project picks and governs patterns, not *which* date-picker or modal-hierarchy to use.
 
 - When a project needs a concrete pattern (a form field state, a data table, a command palette, an easing curve), the DesignMotionHQ catalogue is the first place to look before inventing one.
 - Every pattern adopted from the catalogue gets recorded the same way a motif or primitive does (Layer 2): what it's used for, its token/tint contract if any, and when not to use it. A project's DESIGN.md should keep a short "patterns in use" list naming which catalogue entries it has adopted, so the choice is documented rather than ad hoc.
@@ -66,6 +66,18 @@ Every project's own DESIGN.md should open with these, adapted from DesignMotionH
   - **Feedback patterns** (toast, skeleton loading, optimistic UI, undo UX, error states, Doherty threshold) *are* the frictionless-feedback half of Layer 3's ceremony/frictionless split.
   - **Visual patterns** (design tokens, shadow elevation, border radius, dark mode, depth layers) *are* Layer 1/2 mechanism, expressed as named patterns rather than raw tokens.
 - Categories with no house-level equivalent yet (most of Forms, most of Interaction, Navigation specifics, Motion specifics beyond reduced-motion gating) are intentionally left to per-project judgment, sourced from the catalogue as needed — the house methodology doesn't take a position on, say, OTP input design or command-palette behavior.
+
+### Appendix — Pattern Index (names only, verified 2026-09-12)
+
+75 patterns across 7 categories, per the live `/patterns` page (their site copy claims "10 categories," which doesn't match the actual filter tabs — treat 7 as ground truth). Names and categories only, for lookup — descriptions live at the source, not reproduced here.
+
+- **Content (4):** Empty States, Serial Position, Microcopy, Landing Page Skeleton
+- **Feedback (9):** Doherty Threshold, Error States, Loading States System, Notification System, Toast Notifications, Zeigarnik Effect, Undo UX, Optimistic UI, Skeleton Loading
+- **Forms (12):** Settings System, Autosave, Date Pickers, Form Field States, Input Masking, Range Sliders, Stepper Wizard, Toggle Anatomy, File Upload UX, Password Field UX, OTP Input, Form Validation Timing
+- **Interaction (23):** CSS Has Selector, Bulk Actions, Disabled Buttons, Hover Trap, Behind the Button, Inline Editing, Live Cursors, Destructive Actions, Context Menu, Drag and Drop, Dropdown Design, Peak-End Rule, Search Experience System, Star Rating, Tooltip Design, Swipe Actions, Bottom Sheets, Color Picker UX, Command Palette, Filter Chips, Accordion Disclosure, Data Table, Modal Hierarchy
+- **Motion (4):** Animation Timing, Easing Curves, Card Hover Anatomy, Scroll-Driven Animations
+- **Navigation (4):** Navigation Patterns, Tabs System, Focus States, Pagination
+- **Visual (19):** De-AI Landing Hero, Reverse-Engineered Linear, Charts That Lie, Design System Kit, Golden Ratio, Grid System, Proximity Rule, Shadow Elevation, Visual Hierarchy, Z-Index Mastery, Gradient Design, Design Tokens, Color Accessibility, Gestalt Laws, Border Radius, Dark Mode, Von Restorff Effect, Perfect Card, Depth Layers, Icon Design Rules
 
 ---
 
@@ -113,6 +125,7 @@ A new project inherits the *practice* — pick your own constraints, name your o
 
 - [[olos]] — `design-system/ogden-atlas/MASTER.md`, `wiki/concepts/design-system.md` (`onaxyzogden/atlas`)
 - [[milos]] — `wiki/concepts/motif-tokens.md`, `wiki/concepts/ceremony-gate-pattern.md` (`onaxyzogden/Maqasid`)
-- [DesignMotionHQ](https://designmotionhq.com) — home page thesis + `/patterns` catalog (80+ patterns, 10 categories)
+- [DesignMotionHQ](https://designmotionhq.com) — home page thesis + `/patterns` catalog (75 patterns, 7 categories, verified 2026-09-12; the site's own "10 categories" claim does not match the live page)
 - Synthesized in conversation, 2026-09-12.
-- Compared layer-by-layer against the full `/patterns` enumeration on 2026-09-12; gap analysis led to Layer 2.5.
+- Compared layer-by-layer against the full `/patterns` enumeration on 2026-09-12; gap analysis led to Layer 2.5 and its pattern-name index.
+- Reviewed the "UX Engine" paid product ($79, Claude Code plugin) and the gated "Design System Blueprint" lead magnet on 2026-09-12: neither was copied in — UX Engine is an enforcement tool (out of scope for a spec document) and the Blueprint sits behind an email-gated funnel that was not entered.
