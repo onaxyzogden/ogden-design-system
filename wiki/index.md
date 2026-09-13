@@ -8,3 +8,6 @@ _None yet — this repo holds the house methodology, not a project implementatio
 
 ## Decisions
 _None yet._
+
+## Log
+- [Chronological session log](log.md) — repo scaffold, Blueprint PDF review, full 76-pattern catalogue review.
