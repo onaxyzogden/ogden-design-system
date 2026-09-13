@@ -38,6 +38,7 @@ Every project's own DESIGN.md should open with these, adapted from DesignMotionH
   (This is OLOS's OKLCH elevation ladder feeding semantic aliases, and MIOS's `--motif-tint → --level-color → --pillar-accent → --primary` chain — same mechanism, different names.)
 - A perceptually-uniform color space (OKLCH or similar) is worth adopting once a project needs a real elevation ladder (3+ surface levels that must read as evenly-spaced); skip it for simpler projects rather than importing complexity that isn't earned yet.
 - z-index gets its own small named scale (base/dropdown/sticky/overlay/modal/toast/tooltip/max), never raw integers in component code.
+- Type sizes come from a modular scale (a fixed ratio between steps), not arbitrary pixel values picked per-screen — the failure mode is a heading and a body size landing a few px apart and reading as a mistake rather than a choice.
 
 ---
 
@@ -51,6 +52,8 @@ Every project's own DESIGN.md should open with these, adapted from DesignMotionH
   - Its fallback/tint contract, if it takes a scoped color
   - When **not** to use it (one-off brand moments, throwaway prototypes, non-visual state signaling)
 - Composition rules matter as much as the motif itself: don't stack two of the same animated effect on nested elements, gate every animation under `prefers-reduced-motion`, and make sure light/dark variants are both defined whenever a scope overrides a tint.
+- Icons are a primitive too: pick one icon set and one sizing scale (e.g. 16/20/24/32/48px for inline/default/nav/feature/hero contexts) and stop there — mixed icon styles or ad hoc sizes read the same way mismatched primitives do. Regardless of the icon's visual size, its tappable/clickable area should never drop below ~44×44px.
+- Motion timing is part of the primitive's contract, not an afterthought: pair easing to direction (ease-out entering, ease-in leaving, ease-in-out for moves/resizes) and scale duration to the weight of what's moving (roughly 100-200ms for hover/toggle-scale feedback up to 400-500ms for page-level transitions) — document both alongside the motif the same way its tint/fallback chain is documented.
 
 ---
 
@@ -106,6 +109,7 @@ Everything else gets DesignMotionHQ-style frictionless feedback instead:
 - **Anti-pattern list.** Maintain an explicit "do NOT use" list alongside the positive guidance — generic/undifferentiated design, AI purple/pink gradients, emojis as icons, missing `cursor: pointer`, invisible focus states, instant (non-transitioned) state changes.
 - **Pre-delivery checklist.** Before shipping any UI work, verify contrast ratios, focus visibility, reduced-motion handling, responsive breakpoints, and that new surfaces compose the canonical primitive rather than rolling a new one.
 - **Drift gets flagged, not tolerated.** An off-system value is either promoted to a documented, intentional extension of the token set, or corrected — it never just sits there unaddressed.
+- **Naming conventions are written down, not inferred.** Token names, CSS class conventions (BEM or otherwise), and component prop naming should be documented once per project rather than reverse-engineered by whoever joins next — this is what makes the anti-pattern list and pre-delivery checklist actually checkable by someone new.
 
 ---
 
@@ -128,4 +132,5 @@ A new project inherits the *practice* — pick your own constraints, name your o
 - [DesignMotionHQ](https://designmotionhq.com) — home page thesis + `/patterns` catalog (75 patterns, 7 categories, verified 2026-09-12; the site's own "10 categories" claim does not match the live page)
 - Synthesized in conversation, 2026-09-12.
 - Compared layer-by-layer against the full `/patterns` enumeration on 2026-09-12; gap analysis led to Layer 2.5 and its pattern-name index.
-- Reviewed the "UX Engine" paid product ($79, Claude Code plugin) and the gated "Design System Blueprint" lead magnet on 2026-09-12: neither was copied in — UX Engine is an enforcement tool (out of scope for a spec document) and the Blueprint sits behind an email-gated funnel that was not entered.
+- Reviewed the "UX Engine" paid product ($79, Claude Code plugin) on 2026-09-12: not copied in — it's an enforcement tool (out of scope for a spec document), noted only as a candidate complementary tool.
+- Reviewed the "Design System Blueprint" (free PDF, user-supplied) on 2026-09-12: contributed the icon-sizing/touch-target note (Layer 2), the easing/duration pairing note (Layer 2), and the naming-convention note (Layer 4) — restated in our own words as standard industry practice (Material Design / Apple HIG carry the same guidance), not copied from the PDF's text or layout.
