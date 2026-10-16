@@ -1,5 +1,8 @@
 # Log
 
+## 2026-10-16 — Fieldwork customer can ask for a fresh link
+- In `onaxyzogden/fieldwork-demo` (PR #76, recorded as ADR 098 there) the customer can ask for a fresh link from their record, and the operator's glance shows the ask. Provenance line added; no new lesson.
+
 ## 2026-10-16 — Fieldwork operator glance follows "a link that no longer works is not offered"
 - The operator's walkthrough glance in `onaxyzogden/fieldwork-demo` (PR #75, recorded as ADR 097 there) stops counting a dead-link walkthrough as with the customer and leads with it as the operator's move. Provenance line added; no new lesson.
 
