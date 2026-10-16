@@ -1,5 +1,8 @@
 # Log
 
+## 2026-10-16 — Fieldwork operator glance follows "a link that no longer works is not offered"
+- The operator's walkthrough glance in `onaxyzogden/fieldwork-demo` (PR #75, recorded as ADR 097 there) stops counting a dead-link walkthrough as with the customer and leads with it as the operator's move. Provenance line added; no new lesson.
+
 ## 2026-10-16 — Fieldwork customer side follows "a link that no longer works is not offered"
 - The customer's glance, queue and maintenance record in `onaxyzogden/fieldwork-demo` (PR #74, recorded as ADR 096 there) stop counting and offering an assessment whose link was withdrawn or expired. Provenance line added; no new lesson.
 
