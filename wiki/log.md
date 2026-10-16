@@ -1,5 +1,11 @@
 # Log
 
+## 2026-10-16 — "Modern UI/UX Design Scholar" NotebookLM review
+- Queried the NotebookLM notebook (25 practitioner YouTube sources) across 8 themes — color, typography, layout, motion, components/platforms, gestures/gamification, mistakes, process — with source citations required; raw answers kept in the session scratchpad, every adopted principle restated in original wording.
+- Folded ~30 gaps into `hybrid-design-system.md`: role-based color and the persuasive/operational **register** concept (Layer 1); progressive disclosure, behavioral consistency, motion purpose test, continuous-motion pause control and related primitives (Layer 2); async press acknowledgement, next-step chaining, gesture-form ceremony, generative-output obligations (Layer 3); new anti-patterns plus flows-before-fidelity, repair order, and prototype-based review (Layer 4); an explicit list of taste calls left project-local.
+- Rejected: gamification currencies/streaks/leaderboards (Zeigarnik caveat), arrow removal on swipe lists (gesture parity), single-typeface mandate (conflicts with MIOS editorial serif), implementation constants, personal craft advice.
+- Frontmatter `sources` corrected from 0 to 5 (OLOS, MIOS, DesignMotionHQ, Blueprint PDF, this notebook).
+
 ## 2026-09-21 — Fieldwork operator audit round; two lessons folded back
 - Audited the operator's request-detail screen in `onaxyzogden/fieldwork-demo` after the redesign round below: functionally richer than the design reference, but denser without the density buying anything — a declined job offered the same "who does this job now?" decision through five separate control clusters, announced by six different badges, all funnelling into one modal that asked it a sixth time.
 - Wrote the operator's remit first, before touching any control: triage (is the scope clear enough to act on?), scope authoring (correct classification/duration/split-merge), decide who (a contractor, or self), decide the price (send a quote), unblock (handle declines/expiries, ask the customer when ambiguous). Every control on the screen was then mapped against that list with an explicit verdict — keep, fix, merge, defer behind a disclosure, or cut — rather than judged on sight.
@@ -16,6 +22,9 @@
   - **Layer 3 + Layer 4** — the no-disabled-submit-control rule was already present as half a sentence ("prefer keeping submit controls enabled"). Promoted to a full pattern: the three distinct failures (tab order, screen-reader silence, no pointer events so the explanatory tooltip never opens), the per-field replacement, and the two caveats worth knowing (focus only lands on fields rendered before the click; read-only-because-someone-else's is not a blocked action). Added to the anti-pattern list.
   - **Layer 4** — "test harness and legitimately useful chrome are not reliably distinguishable up front." Identity switchers were dropped from the redesign as scaffolding, then restored once it turned out the prototype could not be evaluated without them.
   - **Layer 0** — model identity as a real reference from the first schema, never a viewer-relative boolean. A boolean answers "is this mine?" but loses "whose is it?", leaving records that exist but cannot be reached from the side that owns them.
+
+## 2026-09-13 — Undo UX + Golden Ratio follow-up
+- Folded in the two patterns reconsidered from the "not folded in" set: undo-window-over-confirmation (Layer 3) and golden ratio as a valid type-scale ratio (Layer 1). Commit: `d27c4f3`.
 
 ## 2026-09-13 — Full DesignMotionHQ pattern catalogue review
 - Reviewed all 76 individual pattern detail pages in DesignMotionHQ's `/patterns` catalogue (dispatched as 7 parallel background research passes, ~11 pages each), each principle restated in original wording and checked against `hybrid-design-system.md` for genuine gaps vs. existing coverage.

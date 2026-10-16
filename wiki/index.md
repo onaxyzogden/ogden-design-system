@@ -10,4 +10,4 @@ _None yet — this repo holds the house methodology, not a project implementatio
 _None yet._
 
 ## Log
-- [Chronological session log](log.md) — repo scaffold, Blueprint PDF review, full 76-pattern catalogue review, Fieldwork redesign round, Fieldwork operator audit round.
+- [Chronological session log](log.md) — repo scaffold, Blueprint PDF review, full 76-pattern catalogue review, Undo UX/Golden Ratio follow-up, Fieldwork redesign round, Fieldwork operator audit round, Modern UI/UX Design Scholar notebook review.
