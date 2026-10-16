@@ -1,5 +1,14 @@
 # Log
 
+## 2026-10-16 — The register applied to the Fieldwork operator request detail; four more lessons
+- The sixth application of the register: the operator's request detail, its tabs and the fulfilment screen in `onaxyzogden/fieldwork-demo` (PR #69, recorded as ADR 091 there). The remit was "the operator sees what this request needs, decides in one step, and books it". The audit found 12 issues, and all 12 are fixed, with five of seven further findings.
+- Four lessons extended the register bullet in Layer 1:
+  - **A fact is not a state.** Facts sit on neutral surfaces in plain text.
+  - **A status chip keeps one rule on every screen it appears.** The detail colours it as the list does.
+  - **A fact every item shares is said once, above them.**
+  - **Where the toast has no undo, a recoverable removal asks first,** as a fallback to Layer 3's undo window, not a replacement for it.
+- The inline-error finding was already covered by Layer 3 and needed no change.
+
 ## 2026-10-16 — The register applied to the Fieldwork operator request list; four more lessons
 - The fifth application of the register: the operator's Requests page in `onaxyzogden/fieldwork-demo` (PR #68, recorded as ADR 090 there). The remit was "the operator sees what is theirs to act on, finds any request in one step, and opens it". The audit found 10 issues, and all 10 are fixed.
 - Four lessons extended the register bullet in Layer 1:
