@@ -1,5 +1,13 @@
 # Log
 
+## 2026-10-16 — The register applied to a Fieldwork screen; three lessons folded back
+- The first application of the persuasive/operational **register**, on the operator's Contractors page in `onaxyzogden/fieldwork-demo` (PR #62, recorded as ADR 085 in that project's own `docs/design-decisions.md`, not here).
+- Audited dial by dial against a written remit: "compare the people you can send". Copy voice, type scale, density/grid and accent were all persuasive. The page had no motion. It is now an h1, one factual line and one roster table, which stacks into labelled lines when the container is narrow.
+- Three lessons extended the register bullet in Layer 1:
+  - **Copy voice is a dial.** An eyebrow, a slogan for a heading, or a badge on every item leaks the persuasive register even when type and spacing are compact.
+  - **Comparison needs aligned rows.** Cards make the eye read each one in turn. A caveat that applies to every row is said once.
+  - **Density is held by width-aware tiers.** One line per value, then wrapped at word boundaries, then stacked. The tiers are measured against the container, not the window. A single breakpoint either overflows or gives up density too early.
+
 ## 2026-10-16 — "Modern UI/UX Design Scholar" NotebookLM review
 - Queried the NotebookLM notebook (25 practitioner YouTube sources) across 8 themes — color, typography, layout, motion, components/platforms, gestures/gamification, mistakes, process — with source citations required; raw answers kept in the session scratchpad, every adopted principle restated in original wording.
 - Folded ~30 gaps into `hybrid-design-system.md`: role-based color and the persuasive/operational **register** concept (Layer 1); progressive disclosure, behavioral consistency, motion purpose test, continuous-motion pause control and related primitives (Layer 2); async press acknowledgement, next-step chaining, gesture-form ceremony, generative-output obligations (Layer 3); new anti-patterns plus flows-before-fidelity, repair order, and prototype-based review (Layer 4); an explicit list of taste calls left project-local.
