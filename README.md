@@ -1,6 +1,6 @@
 # Ogden Design System
 
-House methodology for designing and building web UI/UX across Ogden projects — synthesized from [OLOS](https://github.com/onaxyzogden/atlas) (OGDEN Atlas), [MIOS/MILOS](https://github.com/onaxyzogden/Maqasid), and the pattern catalogue at [DesignMotionHQ](https://designmotionhq.com).
+House methodology for designing and building web UI/UX across Ogden projects — synthesized from [OLOS](https://github.com/onaxyzogden/atlas) (OGDEN Atlas), [MIOS](https://github.com/onaxyzogden/Maqasid), and the pattern catalogue at [DesignMotionHQ](https://designmotionhq.com).
 
 Start here: [wiki/concepts/hybrid-design-system.md](wiki/concepts/hybrid-design-system.md)
 
