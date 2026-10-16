@@ -1,5 +1,12 @@
 # Log
 
+## 2026-10-16 — The register applied to the Fieldwork customer intake; three more lessons
+- The second application of the register, and the first on a customer surface: the intake in `onaxyzogden/fieldwork-demo` (PR #65, recorded as ADR 087 there). The remit was "the customer says where, what and when, and leaves knowing what happens next". The audit found 11 issues, and all 11 are fixed.
+- Three lessons extended the register bullet in Layer 1:
+  - **Warm is not persuasive.** A customer flow may speak warmly but does not sell, and it never shows the operator's working state (review, booking mode, scores).
+  - **Order is part of a comparison.** The best pick may lead, marked once. The rest follow an order the person can read, such as time, never an internal score.
+  - **What the person can act on comes first.** On a phone, real options sit above the preferences that qualify them.
+
 ## 2026-10-16 — The register applied to a Fieldwork screen; three lessons folded back
 - The first application of the persuasive/operational **register**, on the operator's Contractors page in `onaxyzogden/fieldwork-demo` (PR #62, recorded as ADR 085 in that project's own `docs/design-decisions.md`, not here).
 - Audited dial by dial against a written remit: "compare the people you can send". Copy voice, type scale, density/grid and accent were all persuasive. The page had no motion. It is now an h1, one factual line and one roster table, which stacks into labelled lines when the container is narrow.
