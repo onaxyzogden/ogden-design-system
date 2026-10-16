@@ -1,5 +1,13 @@
 # Log
 
+## 2026-10-16 — The register applied to the Fieldwork operator request list; four more lessons
+- The fifth application of the register: the operator's Requests page in `onaxyzogden/fieldwork-demo` (PR #68, recorded as ADR 090 there). The remit was "the operator sees what is theirs to act on, finds any request in one step, and opens it". The audit found 10 issues, and all 10 are fixed.
+- Four lessons extended the register bullet in Layer 1:
+  - **In a list, status colour says whose move it is.** Accent for the rows that wait on the person, a neutral chip for the rest, red only for errors.
+  - **One move, one control.** A duplicate route back is a second thing to keep in step.
+  - **A filtered list that matches nothing says so and offers the way back,** and focus lands somewhere when that control goes.
+  - **A label is for the person; its value is the system's.**
+
 ## 2026-10-16 — The register applied to the Fieldwork contractor workspace; five more lessons
 - The fourth application of the register, and the first on the contractor: the contractor workspace in `onaxyzogden/fieldwork-demo` (PR #67, recorded as ADR 089 there). The remit was "the contractor sees the next job and what it pays, and answers each offer in one step". The audit found 11 issues, and all 11 are fixed.
 - Five lessons extended the register bullet in Layer 1:
