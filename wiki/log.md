@@ -1,5 +1,8 @@
 # Log
 
+## 2026-10-16 — "A link that no longer works is not offered" added from the Fieldwork walkthrough card
+- The operator's Sent walkthrough card in `onaxyzogden/fieldwork-demo` (PR #73, recorded as ADR 095 there) kept offering "Copy link" and "Open as the customer" for a withdrawn or expired link. New lesson added to the Layer 1 register bullet beside "Breaking what someone else holds asks first"; provenance line added.
+
 ## 2026-10-16 — "An end screen says what is still waiting" carried to the Fieldwork customer and contractor queues
 - The rule from the eighth application (ADR 093) applied to the shared end screen of the customer's and contractor's queues in `onaxyzogden/fieldwork-demo` (PR #72, recorded as ADR 094 there). Provenance line only; Layer 1 unchanged.
 
