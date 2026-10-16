@@ -1,5 +1,12 @@
 # Log
 
+## 2026-10-16 — The register applied to the Fieldwork operator Walkthroughs and decision queue; two more lessons
+- The eighth application of the register: the operator's Walkthroughs and decision queue in `onaxyzogden/fieldwork-demo` (PR #71, recorded as ADR 093 there). The remit was "the operator sees whose move each walkthrough waits on, and makes each decision in one press or skips it". The audit found 12 issues; all 12 are fixed, with the empty state from "Also found".
+- Two lessons extended the register bullet in Layer 1:
+  - **An end screen says what is still waiting.** The all-clear shows only when nothing is left.
+  - **Breaking what someone else holds asks first.** Even a replacement, when it cannot be undone; one step when nothing would break.
+- The page name, one state with three names, the red count, accent on every chip and the lost focus were already covered and needed no change.
+
 ## 2026-10-16 — The register applied to the Fieldwork operator Home and Today; four more lessons
 - The seventh application of the register: the operator's Home and Today in `onaxyzogden/fieldwork-demo` (PR #70, recorded as ADR 092 there). The remit was "the operator sees what today holds and what needs them first, and gets to it in one step". The audit found 12 issues, and all 12 are fixed, with the eight further findings in scope.
 - Four lessons extended the register bullet in Layer 1:
