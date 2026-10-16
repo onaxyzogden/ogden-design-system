@@ -1,5 +1,8 @@
 # Log
 
+## 2026-10-16 — Fieldwork customer side follows "a link that no longer works is not offered"
+- The customer's glance, queue and maintenance record in `onaxyzogden/fieldwork-demo` (PR #74, recorded as ADR 096 there) stop counting and offering an assessment whose link was withdrawn or expired. Provenance line added; no new lesson.
+
 ## 2026-10-16 — "A link that no longer works is not offered" added from the Fieldwork walkthrough card
 - The operator's Sent walkthrough card in `onaxyzogden/fieldwork-demo` (PR #73, recorded as ADR 095 there) kept offering "Copy link" and "Open as the customer" for a withdrawn or expired link. New lesson added to the Layer 1 register bullet beside "Breaking what someone else holds asks first"; provenance line added.
 
