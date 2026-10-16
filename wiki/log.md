@@ -1,5 +1,14 @@
 # Log
 
+## 2026-10-16 — The register applied to the Fieldwork contractor workspace; five more lessons
+- The fourth application of the register, and the first on the contractor: the contractor workspace in `onaxyzogden/fieldwork-demo` (PR #67, recorded as ADR 089 there). The remit was "the contractor sees the next job and what it pays, and answers each offer in one step". The audit found 11 issues, and all 11 are fixed.
+- Five lessons extended the register bullet in Layer 1:
+  - **One action, one colour, everywhere it appears.** The colour belongs to the action's role, not the screen.
+  - **One primary per screen.** A shortcut to the item already open steps aside, and each list item's own button is secondary.
+  - **Headings inside a page sit below its h1.**
+  - **Say the title once.** Hide a disclosure with nothing in it.
+  - **An empty state says what is true.** "You're done" needs something that was done.
+
 ## 2026-10-16 — The register applied to the Fieldwork customer home; four more lessons
 - The third application of the register: the customer workspace home in `onaxyzogden/fieldwork-demo` (PR #66, recorded as ADR 088 there). The remit was "the customer sees what needs them, what's coming, and how each request stands". The audit found 9 issues, and all 9 are fixed.
 - Four lessons extended the register bullet in Layer 1:
