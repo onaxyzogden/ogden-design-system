@@ -1,5 +1,14 @@
 # Log
 
+## 2026-10-16 — The register applied to the Fieldwork operator Home and Today; four more lessons
+- The seventh application of the register: the operator's Home and Today in `onaxyzogden/fieldwork-demo` (PR #70, recorded as ADR 092 there). The remit was "the operator sees what today holds and what needs them first, and gets to it in one step". The audit found 12 issues, and all 12 are fixed, with the eight further findings in scope.
+- Four lessons extended the register bullet in Layer 1:
+  - **A greeting is a slogan.** Home names itself too.
+  - **A heading names the scope it shows.** "Today" only on today; otherwise the date.
+  - **Totals count the same set the list shows.**
+  - **An illustration says only what it knows.** One mark per real item, and no route it cannot know.
+- The red count, the four controls to one page and the lost focus were already covered by the register bullet and needed no change.
+
 ## 2026-10-16 — The register applied to the Fieldwork operator request detail; four more lessons
 - The sixth application of the register: the operator's request detail, its tabs and the fulfilment screen in `onaxyzogden/fieldwork-demo` (PR #69, recorded as ADR 091 there). The remit was "the operator sees what this request needs, decides in one step, and books it". The audit found 12 issues, and all 12 are fixed, with five of seven further findings.
 - Four lessons extended the register bullet in Layer 1:
