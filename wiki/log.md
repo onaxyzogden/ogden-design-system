@@ -1,5 +1,13 @@
 # Log
 
+## 2026-10-16 — The register applied to the Fieldwork customer home; four more lessons
+- The third application of the register: the customer workspace home in `onaxyzogden/fieldwork-demo` (PR #66, recorded as ADR 088 there). The remit was "the customer sees what needs them, what's coming, and how each request stands". The audit found 9 issues, and all 9 are fixed.
+- Four lessons extended the register bullet in Layer 1:
+  - **A workspace lists the person's items in the order they act on them**, not creation order.
+  - **One state, one word**, across the badge, the tracker and the notifications.
+  - **Danger colour is for errors.** A count that names something to do opens it.
+  - **Accent repeated on every item is decoration.** Routine content sits on a neutral surface. Labels are sentence case, not tracked capitals.
+
 ## 2026-10-16 — The register applied to the Fieldwork customer intake; three more lessons
 - The second application of the register, and the first on a customer surface: the intake in `onaxyzogden/fieldwork-demo` (PR #65, recorded as ADR 087 there). The remit was "the customer says where, what and when, and leaves knowing what happens next". The audit found 11 issues, and all 11 are fixed.
 - Three lessons extended the register bullet in Layer 1:
