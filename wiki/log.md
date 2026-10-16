@@ -1,5 +1,8 @@
 # Log
 
+## 2026-10-16 — "An end screen says what is still waiting" carried to the Fieldwork customer and contractor queues
+- The rule from the eighth application (ADR 093) applied to the shared end screen of the customer's and contractor's queues in `onaxyzogden/fieldwork-demo` (PR #72, recorded as ADR 094 there). Provenance line only; Layer 1 unchanged.
+
 ## 2026-10-16 — The register applied to the Fieldwork operator Walkthroughs and decision queue; two more lessons
 - The eighth application of the register: the operator's Walkthroughs and decision queue in `onaxyzogden/fieldwork-demo` (PR #71, recorded as ADR 093 there). The remit was "the operator sees whose move each walkthrough waits on, and makes each decision in one press or skips it". The audit found 12 issues; all 12 are fixed, with the empty state from "Also found".
 - Two lessons extended the register bullet in Layer 1:
