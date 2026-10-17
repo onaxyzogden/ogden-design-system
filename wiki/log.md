@@ -1,5 +1,8 @@
 # Log
 
+## 2026-10-16 — Fieldwork fresh-link ask reaches the operator
+- In `onaxyzogden/fieldwork-demo` (PR #77, recorded as ADR 099 there) the fresh-link ask becomes an operator notice, the guest page can ask, and a sent assessment with no link reads "No link yet". Provenance line added; no new lesson.
+
 ## 2026-10-16 — Fieldwork customer can ask for a fresh link
 - In `onaxyzogden/fieldwork-demo` (PR #76, recorded as ADR 098 there) the customer can ask for a fresh link from their record, and the operator's glance shows the ask. Provenance line added; no new lesson.
 
